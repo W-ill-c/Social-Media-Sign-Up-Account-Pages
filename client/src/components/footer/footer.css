@@ -1,0 +1,47 @@
+.footer {
+  width: 330px;
+  height: 100px;
+  margin: 20px auto;
+  border: 0.5px solid rgb(175, 173, 173);
+  text-align: center;
+  padding: 10px;
+}
+.footer h5 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.footer .pageFooterButton {
+  text-align: center;
+  display: inline-block;
+  size: 2rem;
+  padding: 0px 0px;
+  min-width: 125px;
+  height: 40px;
+}
+.footer .pageFooterButton p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 0px 0px 6px;
+  font-size: 0.9em;
+  text-align: left;
+}
+.footer .pageFooterButton .smallButtonText {
+  font-size: 0.6rem;
+}
+.footer .pageFooterButton .footerButtonIcon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5em;
+  margin-right: 6px;
+}
+.footer .left {
+  margin-right: 3.5px;
+  border-radius: 9px;
+}
+.footer .right {
+  margin-left: 3.5px;
+}
+.footer h6 {
+  font-size: 0.75rem;
+}/*# sourceMappingURL=footer.css.map */

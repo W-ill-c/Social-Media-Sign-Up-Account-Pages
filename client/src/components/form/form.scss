@@ -1,0 +1,173 @@
+@import '../colorsPartials';
+@import '../mixinsPartials';
+
+.signUpForm{
+    // width: 100%;
+    @extend %mixin-flex;
+    min-height: 380px;
+    position: relative;
+
+    .message{
+        @extend %absolute-z-index;
+        top: 2.6px;
+        right: 16px;
+        font-size: 1.3em;
+    }
+
+    .secondMessage{
+        @extend %absolute-z-index;
+        top: 149.5px;
+        right: 40px;
+        font-size: 1.3em;
+    }
+
+    .error{
+        color: red;
+    }
+
+    .success{
+        color: rgb(23, 151, 23);
+    }
+
+    #topP{
+        margin-top: 10px;
+    }
+
+    p{
+        font-size: 0.75rem;
+    }
+
+    #formButton{
+        width: 85%;
+        size:2rem;
+        
+        #nextLink{
+            color: white;
+            text-decoration: none;
+            height: fit-content;
+            margin: auto 0px;
+        }
+    }
+
+    input{
+        width: 80%;
+        margin: 5px 0px;
+        @extend %input;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::placeholder{
+            font-size: 0.8rem;
+        }
+
+        &:focus::placeholder{
+            position: absolute;
+            top: 0px;
+            left:0px;
+            font-size: 0.6rem;
+            display:inline;
+        }
+    }
+}
+
+.wholeForm{
+    margin: 10px auto;
+    width: 330px;
+    min-height: 570px;
+    @include border-styles;
+    max-width: 100%;
+    padding: 17.5px 10px 8px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    text-align: center;
+    // align-items: center;
+    // align-self: center;
+    min-height: 620px;
+    // display: flex;
+    // align-content: space-evenly;
+
+    header{
+        width: 100%;
+        color: $lightGreyColour;
+        h2{
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        #subHeader{
+            width: 85%;
+            font-size: 1.05rem;
+        }
+
+        button{
+            border-radius: 10px;
+            align-items: center;
+            display: flex;
+            justify-content:center;
+            width: 85%;
+            // padding: 0px;
+            margin: 15px auto;
+
+            h6{
+                margin: 0px 5px;
+                display: inline-block;
+                // vertical-align: middle;
+            }
+
+        }
+
+        .headerHR{
+            width: 95px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        h6{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0px 10px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.formFooter{
+    margin: 10px auto;
+    width: 330px;
+    height: 65px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    // flex-direction: column;
+    @include border-styles;
+    position: relative;
+
+    h6{
+        // vertical-align: middle;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin:0px;
+        font-size: 0.8rem;
+        font-weight: 450;
+        width: 200px;
+    }
+
+    #loginLink{
+        text-decoration: none;
+        &:hover{
+            color:rgb(72, 72, 250);
+        }
+    }
+}
+
+.passwordError{
+    z-index: 15;
+    position: absolute;
+    color: red;
+    top: 90px;
+}

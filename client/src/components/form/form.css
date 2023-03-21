@@ -1,0 +1,163 @@
+.signUpForm {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.signUpForm .secondMessage, .signUpForm .message {
+  position: absolute;
+  z-index: 15;
+}
+
+.signUpForm input {
+  background-color: rgb(243, 243, 251);
+  border: 0.5px solid rgb(238, 231, 231);
+  position: relative;
+}
+
+.signUpForm {
+  min-height: 380px;
+  position: relative;
+}
+.signUpForm .message {
+  top: 2.6px;
+  right: 16px;
+  font-size: 1.3em;
+}
+.signUpForm .secondMessage {
+  top: 149.5px;
+  right: 40px;
+  font-size: 1.3em;
+}
+.signUpForm .error {
+  color: red;
+}
+.signUpForm .success {
+  color: rgb(23, 151, 23);
+}
+.signUpForm #topP {
+  margin-top: 10px;
+}
+.signUpForm p {
+  font-size: 0.75rem;
+}
+.signUpForm #formButton {
+  width: 85%;
+  size: 2rem;
+}
+.signUpForm #formButton #nextLink {
+  color: white;
+  text-decoration: none;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0px;
+}
+.signUpForm input {
+  width: 80%;
+  margin: 5px 0px;
+}
+.signUpForm input:focus {
+  outline: none;
+}
+.signUpForm input::-moz-placeholder {
+  font-size: 0.8rem;
+}
+.signUpForm input::placeholder {
+  font-size: 0.8rem;
+}
+.signUpForm input:focus::-moz-placeholder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 0.6rem;
+  display: inline;
+}
+.signUpForm input:focus::placeholder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 0.6rem;
+  display: inline;
+}
+
+.wholeForm {
+  margin: 10px auto;
+  width: 330px;
+  min-height: 570px;
+  border: 0.5px solid rgb(238, 231, 231);
+  max-width: 100%;
+  padding: 17.5px 10px 8px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  min-height: 620px;
+}
+.wholeForm header {
+  width: 100%;
+  color: rgb(175, 173, 173);
+}
+.wholeForm header h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+.wholeForm header #subHeader {
+  width: 85%;
+  font-size: 1.05rem;
+}
+.wholeForm header button {
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 15px auto;
+}
+.wholeForm header button h6 {
+  margin: 0px 5px;
+  display: inline-block;
+}
+.wholeForm header .headerHR {
+  width: 95px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wholeForm header h6 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 10px;
+  font-size: 0.9rem;
+}
+
+.formFooter {
+  margin: 10px auto;
+  width: 330px;
+  height: 65px;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  border: 0.5px solid rgb(238, 231, 231);
+  position: relative;
+}
+.formFooter h6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  font-size: 0.8rem;
+  font-weight: 450;
+  width: 200px;
+}
+.formFooter #loginLink {
+  text-decoration: none;
+}
+.formFooter #loginLink:hover {
+  color: rgb(72, 72, 250);
+}
+
+.passwordError {
+  z-index: 15;
+  position: absolute;
+  color: red;
+  top: 90px;
+}/*# sourceMappingURL=form.css.map */

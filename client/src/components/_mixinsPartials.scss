@@ -1,0 +1,28 @@
+%mixin-flex{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+%absolute-z-index{
+    position: absolute;
+    z-index: 15;
+}
+
+@mixin border-styles($borderColor:$secondaryLightGrey){
+    border: 0.5px solid $borderColor;
+}
+
+%input-placeholder{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    font-size: 0.6rem;
+    display:inline;
+}
+
+%input{
+    background-color: $lightBlue;
+    @include border-styles;
+    position: relative;
+}
